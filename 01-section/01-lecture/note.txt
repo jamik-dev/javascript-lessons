@@ -1,0 +1,73 @@
+#01 - Introducing variables & Constants | O'zgaruvchilar bilan tanishish
+
+-----
+Show in Presintation
+-----
+
+
+#02 - Declaring & Defining variables | O'zgaruvchilarni yaratish & e'lon qilish
+
+-----
+Show in Presintation
+-----
+
+#03 - Working with Variables & Operators | O'zgaruvchilar & Aperatorlar bilan ishlash
+
+!-----
+Show in Presintation
+let currentValue = 0;
+
+currentValue = (currentValue + 10) * 3/2 - 1;
+
+console.log(currentValue);
+-----!
+
+#04 - Data Types: Numbers & Strings (Text) | Ma'lumot Turlari: Sonlar & Stringlar (Matn)
+
+!-----
+Show in Presintation
+let defaultValue = 0;
+let currentResult = 0;
+
+currentResult = (defaultValue + 10) * 3 /2 -1;
+
+let calculationDescription = '(' + currentResult + ' + 10) * 3 / 2 - 1';
+
+
+console.log(currentResult, calculationDescription);
+-----!
+
+#05 - Using Constants | Kanstantalarni ishlatish
+
+!-----
+const defaultValue = 0;
+let currentResult = 0;
+
+currentResult = (defaultValue + 10) * 3 /2 -1;
+
+let calculationDescription = '(' + currentResult + ' + 10) * 3 / 2 - 1';
+
+
+console.log(currentResult, calculationDescription);
+-----!
+
+
+#06 - More on Strings | Stringlar haqida ko'proq
+
+!----
+const string1 = "A string primitive";
+const string2 = 'Also a string primitive';
+const string3 = `Yet another string primitive`;
+const string4 = new String("A String object");
+console.log("cat"[1]);
+
+let a = 1;
+let b = 2;
+let c = a + b;
+
+let result = `${a} + ${b} = ${c}`;
+
+let listOfNames = "Gary: \n Mary \n John \n Joanna";
+let name = 'I\'m the Jamshid';
+
+----!
