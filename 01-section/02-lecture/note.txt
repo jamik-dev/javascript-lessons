@@ -1,0 +1,69 @@
+#01 - Introducing Functions | Funksiyalar bilan tanishish
+
+!-----
+Show in Presintation
+-----!
+
+
+#02 - Adding A Custom Function | Oddiy funksiya qo'shish
+
+!-----
+Show in Presintation |
+
+You can call a function more than once
+
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+
+greet("John"); // Output: "Hello, John!"
+-----!
+
+#03 - Code Styles, Conventions & Syntax | Kod stillari, konventsiya va sintaksislar
+
+!-----
+Show in Presintation
+-----!
+
+#04 - returning values | qiymat qaytarish
+
+!-----
+Show in Presintation
+function addNumbers(a, b) {
+  return a + b;
+}
+
+let result = addNumbers(5, 10);
+console.log(result); // Output: 15
+
+
+function multiplyNumbers(a, b) {
+  return a * b;
+}
+
+let result = multiplyNumbers(5, 10);
+console.log(result); // Output: 50
+-----!
+
+#05 - Exercise: Functions | Funksiyalar bilan mashq
+
+!-----
+# 01 Exercise | Sum of two elements
+Define a function named "sum"
+Within the function, return the sum of the two arguments
+Invoke the function and pass in two numbers as arguments
+Use console.log to print the result of the function
+
+# 02 Exercise | Multiplication of two elements
+Define a function named "multiply"
+Within the function, return the product of the two arguments
+Invoke the function and pass in two numbers as arguments
+Use console.log to print the result of the function
+-----!
+
+
+#06 - The (Un)Importance of Code Order | Kod ketma-ketligini muhimliligi yoki muhimmasligi
+
+!-----
+Show in Presintation
+-----!
