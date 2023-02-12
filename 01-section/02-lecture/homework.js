@@ -16,3 +16,11 @@
 // Within the function, return the third angle of the triangle || va funksiyadan uchburchakning 3-chi burchagini "return" qiling
 // Invoke the "findThirdAngle" function and pass in two numbers as arguments || funksiyani chaqiring va unga ikkita raqam argument sifatida bering
 // Use console.log to print the result of the function || javobni chiqarish uchun console.log dan foydalaning
+
+function triangle(a, b) {
+  return 180 - (a + b);
+}
+
+let result = triangle(50, 60);
+
+console.log(result);
