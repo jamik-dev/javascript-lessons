@@ -1,0 +1,60 @@
+#01 - An Introduction to Global & Local Scope | Global va Local qamrovni tanishtirish
+
+!-----
+Show in Presintation
+-----!
+
+
+#02 - Understanding Scope | Qamrovni tushinish
+
+!-----
+Show in Presintation
+
+let global = "o'rdak";
+
+function localFunc() {
+  let local = "xo'roz";
+  console.log(local, global);
+}
+
+console.log(global, local)
+-----!
+
+#03 - Shadowed Variables | Soyalangan o'zgaruvchilar
+
+!-----
+Show in Presintation
+
+let user = "Jamshid";
+
+function shadow() {
+  let user = "Ilhom";
+  console.log(user);
+}
+
+console.log(user);
+-----!
+
+#04 - More about the "return" statement | "return" haqida ko'proq ma'lumot
+
+!-----
+function returnSmth() {
+  let a = 1;
+  return a;
+  console.log('After return');
+}
+
+console.log(returnSmth());
+-----!
+
+#05 - Executing Functions "Directly" and "Indirectly" | Funksiyalarni bevosita va bilvosita ishga tushirish
+
+!-----
+Show in Presintation
+
+function sum(a, b) {
+  console.log(a+b);
+}
+
+sum(1,2)
+-----!
