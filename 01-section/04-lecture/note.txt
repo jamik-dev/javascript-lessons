@@ -1,0 +1,62 @@
+#01 - Converting Data Types | Data tiplarni o'zgartirish
+
+!-----
+Show in Presintation
+-----!
+
+
+#02 - some examples | bir qancha misollar
+
+!-----
+let num1 = 1;
+
+num1 = num1.toString();
+
+console.log(num1);
+-----!
+
+#03 - Mixing Numbers & Strings | Raqamlar va Stringlarni aralashtirish
+
+!-----
+let a = 3 + '3';
+let b = 'hi' - 'h';
+let c = 3 * '3';
+let d = 5 - '3';
+let e = 3 / '3';
+
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+console.log(e);
+-----!
+
+#04 - Splitting code into functions | kodni funksiyalarga bo'lish
+
+!-----
+function stringToNumber(str) {
+  return parseInt(str);
+}
+
+function numberToString(num) {
+  return num.toString();
+}
+
+console.log(stringToNumber('4'));
+
+-----!
+
+#05 - More Operators | Ko'proq operatorlar
+
+!-----
+Show in Presintation
+}
+-----!
+
+#06 - Difference between Prefix and Postfix | Prefix va Postfix o'rtasidagi farq
+
+!-----
+Show in Presintation
+}
+-----!
+
