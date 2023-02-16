@@ -7,3 +7,8 @@
 // Funksiyani bizga uchburchakning yuzini qaytarsin
 // Qo'llanma! Uchburchakning yuzini topish uchun, balandlik va asosiga tushgan balandlik ko'paytmasining yarmi topilishi kerak 
 // Javobni console ga chiqaring
+
+
+// areaOfTriangle =? asosiga tushirilgan balandlik va asosning ko'paytmasi yarmi
+
+// a, b => a*b/2
