@@ -1,0 +1,57 @@
+#01 - More core data types | Asosiy data tiplar haqida ko'proq
+
+!-----
+Show in Presintation
+-----!
+
+
+#02 - Array and Object explanation | Array va Object ga ta'rif
+
+!-----
+Show in Presintation
+-----!
+
+#03 - Using Arrays | Arraylarni ishlatish
+
+!-----
+let array1 = [];
+array1.push(1);
+console.log(array1[1])
+-----!
+
+#04 - Creating Objects | Obyektlarni yaratish
+
+!-----
+let age1 = 18;
+let year1 = 2004;
+
+let someObj = {
+  name: "Jamshid",
+  age: age1,
+  year: year1
+}
+
+console.log(someObj)
+-----!
+
+#05 - Objects Common syntax | Obyektlarning umumiy sintaksisi
+
+!-----
+Show in Presintation
+}
+-----!
+
+#06 - Accessing Object Data | Obyekting ma'lumotiga bog'lanish
+
+!-----
+let obj1 = {
+  name: "Jamshid",
+  age: 18,
+  year: 2004
+}
+
+let age = obj1.age;
+console,log(obj1.name);
+}
+-----!
+
