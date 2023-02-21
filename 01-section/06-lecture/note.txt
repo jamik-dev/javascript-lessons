@@ -1,4 +1,4 @@
-#01 - Adding a Re-Usable Function That Uses Objects | Obyektlarni ishlatgan holda qayta ishlatina oladigan funksiyalar yaratish
+#01 - Adding a Re-Usable Function That Uses Objects | Obyektlarni ishlatgan holda qayta ishlatila oladigan funksiyalar yaratish
 
 !-----
 let list = [];

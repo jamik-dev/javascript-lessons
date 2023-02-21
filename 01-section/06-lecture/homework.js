@@ -1,1 +1,1 @@
-// do all lectures homeworks fow practice without looking answers!!!
+// do all lecture's homeworks for practice without looking answers!!!
