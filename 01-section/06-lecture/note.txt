@@ -1,0 +1,53 @@
+#01 - Adding a Re-Usable Function That Uses Objects | Obyektlarni ishlatgan holda qayta ishlatina oladigan funksiyalar yaratish
+
+!-----
+let list = [];
+
+function addListPerson(name, age, year, gender) {
+  let person = {
+    name: name,
+    age: age,
+    year: year,
+    gender: gender
+  };
+
+  list.push(person);
+};
+
+addListPerson("Jamshid", 18, 2004, "male");
+addListPerson("Fotima", 23, 2000, "female");
+
+
+console.log(list);
+-----!
+
+
+#02 - null / undefined / NaN
+
+!-----
+Show in Presintation
+
+let someVariable = null;
+let otherVariable;
+
+console.log(someVariable + otherVariable);
+-----!
+
+#03 - The "typeof" operator | "typeof" operatori
+
+!-----
+console.log(typeof "Jamshid");
+console.log(typeof 18);
+console.log(typeof true);
+console.log(typeof ["Nosir", 19]);
+console.log(typeof {name: "Mahmud", age: 20});
+console.log(typeof undefined);
+console.log(typeof null);
+console.log(typeof NaN);
+-----!
+
+#04 - 4 steps to solve any problem || har qanday muammoni 4 ta usulda hal qilish
+
+!-----
+Show in Presintation
+-----!
