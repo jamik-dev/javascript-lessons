@@ -1,0 +1,69 @@
+#01 - Quick introduction | Qisqa tanishuv
+
+!-----
+Show in Presintation
+-----!
+
+#02 - Configuring IDE look & feel
+
+!-----
+Show in Presintation and VScode
+-----!
+
+#03 - Configuring file look & icon
+
+!-----
+Show in Presintation and VScode
+-----!
+
+#04 - Configuring Panel look
+
+!-----
+Show in Presintation and VScode
+-----!
+
+#05 - Shortcut lar bilan ishlash
+
+!-----
+Show in VScode
+
+Ctrl + D | bir xil so'zlarni belgilash
+Alt+Directions | kodning qatorini o'zgartirish
+-----!
+
+#06 - Configuring Panel look
+
+!-----
+Show in Presintation and VScode
+-----!
+
+#07 - Configuring Shortcuts
+
+!-----
+Show in Presintation and VScode
+Resources shortcuts.pdf
+-----!
+
+#08 - Auto Completion
+
+!-----
+Show in Presintation and VScode
+-----!
+
+#09 - Extensions
+
+!-----
+Show in Presintation and VScode
+-----!
+
+#10 - Editor Settings
+
+!-----
+Show in VScode
+-----!
+
+#11 - IDE views
+
+!-----
+Show in VScode
+-----!
