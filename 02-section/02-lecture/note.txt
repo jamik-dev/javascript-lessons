@@ -38,7 +38,7 @@ function changeVariable(a, b) {
   b = "Sardor";
   console.log(a, b)
 }
-console.log(age, name)
+console.log(age, name);
 changeVariable();
 
 -----!
