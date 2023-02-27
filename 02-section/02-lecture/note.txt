@@ -1,0 +1,50 @@
+#01 - Asking for help | Yordam olish
+
+!-----
+Show in Presintation
+-----!
+
+#02 - MDN Website
+
+!-----
+Show in Presintation and VScode
+-----!
+
+#03 - Googling correctly | To'g'ri google qilish
+
+!-----
+Show in Presintation and VScode
+-----!
+
+#04 - Debugging | Kodni qayta tekshirish
+
+!-----
+Show in Presintation 
+
+let age = 18;
+let array1 = [;
+
+console.log(str(18));
+-----!
+
+#05 - console.log() dan foydalanish
+
+!-----
+let age = 18;
+let name = "Jamshid";
+
+function changeVariable(a, b) {
+  a = 20;
+  b = "Sardor";
+  console.log(a, b)
+}
+console.log(age, name)
+changeVariable();
+
+-----!
+
+#06 - VScode Debugging
+
+!-----
+Show in Presintation and VScode
+-----!
