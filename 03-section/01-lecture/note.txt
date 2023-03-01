@@ -1,0 +1,88 @@
+#01 - Introduction | Tanishtiruv
+
+!-----
+Talk about conditions and section
+-----!
+
+
+#02 - Conditional Code Execution | Holatga qarab kodni ishga tushirish
+
+!-----
+Show in Presintation
+-----!
+
+#03 - Boolean Operators | Boolean operatorlari haqida
+
+!-----
+Show in Presintation
+
+let a = "5";
+let b = "5";
+console.log(a == b);
+console.log(a != b);
+console.log(a === b);
+console.log(a > b);
+console.log(a >= b);
+console.log(!a);
+-----!
+
+#04 - Order of Execution | Kodni ishlash tartibi
+
+!-----
+Show in Presintation
+-----!
+
+#05 - Working with if statement | If bilan ishlash
+
+!-----
+function worker(operator, num1, num2) {
+  let result = null;
+  if (operator === "add") {
+    result = num1 + num2;
+  } else {
+    result = num1 - num2;
+  }
+  return result;
+}
+
+console.log(worker("add", 10 , 12));
+-----!
+
+#06 - Working with if, if-else, else-if statement | If, if-else, else-if lar bilan ishlash
+
+!-----
+function worker(operator, num1, num2) {
+  let result = null;
+  if (operator === "add") {
+    result = num1 + num2;
+  } else if (operator === "subtract") {
+    result = num1 - num2;
+  } else if (operator === "multiply") {
+    result = num1 * num2;
+  } else {
+    result = num1 / num2;
+  }
+  return result;
+}
+
+console.log(worker("add", 20 , 10));
+console.log(worker("subtract", 20 , 10));
+console.log(worker("multiply", 20 , 10));
+console.log(worker("divide", 20 , 10));
+-----!
+
+#07 - Object and Array equality | Obyekt va Array tengligi
+
+!-----
+Show in Presintation
+
+let person1 = {name : "Jamshid"};
+let person2 = {name : "Jamshid"};
+
+console.log(person1 == person2);
+console.log(person1.name == person2.name);
+
+let person3 = person1;
+cosnole.log(person1 == person3);
+
+-----!
