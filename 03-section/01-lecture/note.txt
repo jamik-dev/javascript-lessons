@@ -83,6 +83,6 @@ console.log(person1 == person2);
 console.log(person1.name == person2.name);
 
 let person3 = person1;
-cosnole.log(person1 == person3);
+console.log(person1 == person3);
 
 -----!
