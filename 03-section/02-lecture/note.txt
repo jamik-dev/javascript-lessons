@@ -1,0 +1,87 @@
+#01 - Combining Conditions | Holatlarni birlashtirish
+
+!-----
+Show in Presintation
+
+function divider(a) {
+  if (a % 2 === 0 || a % 5 === 0) {
+    console.log("ha bo'linadi");
+  } else {
+    console.log("yo'q bo'linmaydi");
+  }
+}
+
+divider(4);
+-----!
+
+
+#02 - Understanding operator precendence | Operator ustunligini tushinish
+
+!-----
+console.log(4 + 6 * 3);
+console.log(2 * 3 ** 3); // 2 * (3 ** 3) bilan bir xil
+console.log((2 + 4) * 3);
+console.log(4 ** 3 ** 2); // 4 ** (3 ** 2) bilan bir xil
+console.log(4 / 3 / 2); // (4 / 3) / 2 bilan bir xil
+console.log(3 + 2 < 9 - 2) // (3+2)<(9-2)
+console.log(5 == 5 && 3 < 6 || 10 < 20) // ((5 == 5) && (3 < 6)) || (10 < 20)
+
+
+let a, b;
+a = b = 5; // a = (b = 5) bilan bir xil
+console.log(a, b);
+
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedences
+-----!
+
+#03 - Beyond truthy and falsy values | Haqiqiy va Yolg'on qiymatlar ortida
+
+!-----
+Show in Presintation
+
+let name = "Jamshid";
+
+if (name) {
+  console.log("Ishladi!");
+}
+-----!
+
+#04 - Coercion vs Conversion | Majburlash vs O'zgartirish
+
+!-----
+let isLoggedIn = true;
+if(isLoggedIn) {
+  // code
+}
+
+if(isLoggedIn === true) { // ortiqcha
+  // code
+}
+
+// coercion 
+console.log(1 + '2');
+
+// conversion
+let userInput = "Max";
+
+if (userInput) {
+  // code
+}
+-----!
+
+#05 - Working with some examples | Bir qancha misollar bilan ishlash
+
+!-----
+#01
+Agar yoshi 16 dan katta va guvohnomasi bor bo'lsa "Haydashingiz mumkin" degan yozuv chiqsin
+Agar yoshi 16 dan katta ammo guvohnomasi bo'lmasa "Birinchi haydovchilik guvohnomasini olishingiz kerak" degan yozuv chiqsin
+Agar yoshi 16 dan kichik bo'lsa "Siz haydash uchun yetarli yoshda emassiz" degan yozuv chiqsin
+
+#02
+90 ball dan yuqori bo'lsa "Sizning bahoyingiz A" deb chiqarsin
+80 ball dan yuqori bo'lsa "Sizning bahoyingiz B" deb chiqarsin
+70 ball dan yuqori bo'lsa "Sizning bahoyingiz C" deb chiqarsin
+60 ball dan yuqori bo'lsa "Sizning bahoyingiz D" deb chiqarsin
+60 ball dan past bo'lsa "Sizning bahoyingiz F" deb chiqarsin
+
+-----!
