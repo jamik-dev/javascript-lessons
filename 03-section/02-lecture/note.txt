@@ -58,10 +58,10 @@ if(isLoggedIn === true) { // ortiqcha
   // code
 }
 
-// coercion 
+// conversion
 console.log(1 + '2');
 
-// conversion
+// coercion 
 let userInput = "Max";
 
 if (userInput) {
