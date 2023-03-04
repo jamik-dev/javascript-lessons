@@ -1,0 +1,140 @@
+#01 - Ternary operator | Ternary operatori
+
+!-----
+Show in Presintation
+
+let isLoggedIn = true;
+
+let someName = isLoggedIn ? 'Hello Jamshid' : 'Siz LogIn qilmagansiz!';
+
+console.log(someName);
+-----!
+
+
+#02 - Understanding expression and statement | Expression va statement ni tushinish
+
+!-----
+console.log(4 + 6 * 3); // expression
+let smth = 4 + 23 - 4; // expression
+
+if (smth === 23) { // statement
+  console.log("working");
+}
+-----!
+
+#03 - “Boolean Tricks” with Logical Operators | Logik operatorlar bilan "Boolean hiylalar" 
+
+!-----
+Show in Presintation
+
+let userInput = "";
+const isValidinput = !!userInput;
+console.log(isValidinput);
+console.log(!isValidinput);
+
+or operatori birinchisi true bo'lsa o'shani qaytaradi, aslida true/false o'zgartirib keyin qaytarmaydi
+
+const userName = userInput || 'Jamshid';
+const realUserInput = "Sardor";
+const realUserName = realUserInput || 'Ilhom';
+
+console.log(userName);
+console.log(realUserName);
+
+let isLoggedIn = true;
+const shoppingCart = isLoggedIn && ['Books'];
+console.log(shoppingCart);
+
+const smth = null && 'Jamshid';
+console.log(smth);
+-----!
+
+#04 - Logical Operators - A Quick Summary | Logik operatorlar - Qisqacha xulosa
+
+!-----
+Boolean operators => logical and comparision operators
+
+comparision operators => '==', '!=', '===', '!==', '>', '<', '>=', '<='
+logical operators => '&&', '||', '!'
+
+const userName = 'Max';
+const altName = '';
+console.log(userName === 'Max'); // true
+console.log(userName); // tegilmadi, hali ham string => 'Max'
+ 
+console.log(userName || null); // userName truthy bo'lgani uchun || bizga qaytaradi  => 'Max'
+console.log(altName || 'Max'); // altName falsy bo'ldi (bo'sh string), shuning uchun 'Max' qaytdi => 'Max'
+console.log(altName || ''); // ham altName ham '' falsy ammo agar birinchi part falsy bo'lsa har doim ikkinchi part qaytariladi => ''
+console.log(altName || null || 'Anna'); // altName va null falsy, 'Anna' qaytdi => 'Anna'
+ 
+console.log(userName && 'Anna'); // userName truthy, shuning uchun ikkinchi (!) qiymat qaytdi => 'Anna'
+console.log(altName && 'Anna'); // altName falsy, shuning uchun birinchi qiymat qaytdi => ''
+console.log(userName && ''); // userName truthy, shuning uchun ikkinchi qiymat qaytdi => ''
+
+Qanday operator ishlatsak ham qiymat o'zgarmaydi, shunchaki talab qilingan joyda qiymat o'zgaradi lekin asl qiymati emas
+comparision operatorlari har doim true/false qaytaradi
+'&&' va '||' esa qiymatlarga boolean sifatida qaraydi va asl qiymatni qaytaradi (boolean qiymatni emas!)
+
+const enteredValue = ''; // user kiritgan qiymat sifatida olamiz
+ 
+const userName = enteredValue || 'NIMADIR NARSA'; // agar enteredValue false/falsy bo'ladigan bo'lsa 'NIMADIR NARSA' qaytariladi
+-----!
+
+#05 - switch case
+
+!-----
+let num = 1;
+
+switch (num) {
+  case 1:
+    console.log("Monday");
+  case 2:
+    console.log("Tuesday");
+  case 3:
+    console.log("Wednesday");
+  case 4:
+    console.log("Thursday");
+  case 5:
+    console.log("Friday");
+  case 6:
+    console.log("Saturday");  
+  case 7:
+    console.log("Sunday");    
+  default: 
+    console.log("Mavjud emas");      
+}
+
+// agar birinchi case qanoatlantirsa keyingi case lar avtomatik
+// tarzda ishga tushadi agar break; qo'yilmagan bo'lsa
+
+// default bu har qanday holatda ishga tushsin degani
+
+// case 1:
+// case 2:
+     // code 
+// sifatida ham yozishimiz mumkin
+
+
+
+90 ball dan yuqori bo'lsa "Sizning bahoyingiz A" deb chiqarsin
+80 ball dan yuqori bo'lsa "Sizning bahoyingiz B" deb chiqarsin
+70 ball dan yuqori bo'lsa "Sizning bahoyingiz C" deb chiqarsin
+60 ball dan yuqori bo'lsa "Sizning bahoyingiz D" deb chiqarsin
+60 ball dan past bo'lsa "Sizning bahoyingiz F" deb chiqarsin
+
+
+let grade = 85;
+switch (true) {
+  case grade >= 90:
+    console.log("Sizning bahoyingiz A");
+  case grade >= 80:
+    console.log("Sizning bahoyingiz B");
+  case grade >= 70:
+    console.log("Sizning bahoyingiz C");
+  case grade >= 60:
+    console.log("Sizning bahoyingiz D");
+  default:
+    console.log("Sizning bahoyingiz F");
+}
+
+-----!
