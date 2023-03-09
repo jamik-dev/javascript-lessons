@@ -1,0 +1,96 @@
+#01 - Introduction for LOOPS | LOOP'lar bilan tanishuv
+
+!-----
+Show in Presintation
+-----!
+
+
+#02 - LOOPS | LOOP'lar
+
+!-----
+Show in Presintation
+-----!
+
+#03 - For-LOOP
+
+!-----
+Show in Presintation
+
+// 1
+for (let i = 0; i < 10; i++) { // teskarisi ham i--
+  console.log(i);
+}
+
+// 2
+for (let i = 0; i < 10 && i > 4; i++) {
+  console.log(i);
+}
+
+// 3
+for (let i = 0; i < 10) {
+  console.log(i);
+  i++;
+}
+
+// 4
+for (;;) {
+  console.log("infinity");
+}
+-----!
+
+#04 - For of LOOP
+
+!-----
+Show in Presintation
+
+const array1 = ["Jamshid", "Ilhom", "Sardor", "Ulug'bek"];
+for(let i = 0; i < array1.length; i++) {
+  console.log(array1[i])
+}
+
+let i = 0;
+for (const name of array1) { // har bitta loop da bitta yangi const name o'zgaruvchi yaratadi
+  console.log(name, i);
+  i++;
+}
+-----!
+
+#05 - For in LOOP
+
+!-----
+Show in Presintation
+
+const obj1 = {name: "Jamshid", age: 18, position: "Frontend developer"};
+for (const key in obj1) {
+  console.log(key);
+  console.log(obj1[key]);
+}
+
+// Nested for loops
+-----!
+
+#06 - While LOOP
+
+!-----
+Show in Presintation
+
+let j = 0;
+while (j < 3) {
+  console.log(j);
+  j++;
+}
+
+
+let randomNumbers = [];
+let finished = false;
+
+while (!finished) {
+  let rndNumber = Math.random();
+  randomNumbers.push(rndNumber);
+
+  if (rndNumber > 0.5) {
+    finished = true;
+    console.log(randomNumbers);
+  }
+}
+-----!
