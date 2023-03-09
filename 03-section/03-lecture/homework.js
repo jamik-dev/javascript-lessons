@@ -17,3 +17,6 @@
 // agar narx 50 va 100 oralig'ida bo'lsa chegirma 15%
 // agar narx 50 dan kichik bo'lsa chegirma 10%
 // agar narx 0 va undan past bo'lsa chegirma yo'q
+// let narx = 200;
+// x = chegirma*narx/100
+// chegirmalanganNarx = narx - x;
