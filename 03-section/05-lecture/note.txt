@@ -1,0 +1,97 @@
+#01 - Controlling Loops with break | break orqali loop'larni boshqarish
+
+!-----
+Show in Presintation
+
+for (let i = 0; i < 5; i++) {
+  console.log(i, "i");
+  break;
+}
+-----!
+
+
+#02 - Nested Loops break
+
+!-----
+for (let i = 0; i < 5; i++) {
+  console.log(i, "i");
+  for (let j = 0; j < 5; j++) {
+    console.log(j, "j");
+    break;
+  }
+}
+-----!
+
+#03 - Controlling Loops with continue | continue orqali loop'larni boshqarish - iteration
+
+!-----
+# 1
+for (let i = 0; i < 5; i++) {
+  if(i === 3) {
+    break;
+  }
+  console.log(i, "i");
+}
+
+# 2
+for (let i = 0; i < 5; i++) {
+  if(i === 3) {
+    continue;
+  }
+  console.log(i, "i");
+}
+
+# 3
+for (let i = 0; i < 5;) {
+  if(i === 3) {
+    continue;
+  }
+  console.log(i, "i");
+  i++;
+}
+
+-----!
+
+#04 - Controlling Loops with Labeled Statements | labeled Statement'lar orqali loop ni boshqarish
+
+!-----
+outerLoop: for (let i = 0; i < 5; i++) {
+  console.log(i, "i");
+  innerLoop: for (let j = 0; j < 5; j++) {
+    console.log(j, "j");
+    break;
+  }
+}
+-----!
+
+#05 - Error Handling | Error'ni ushlash, boshqarish bla bla bla
+
+!-----
+Show in Presintation
+-----!
+
+#06 - Throwing custom errors || Odatiy (oddiy) muammolarni uloqtirish
+
+!-----
+Show in Presintation
+
+let str1 = 'Salom';
+
+if(typeof str1 === 'string') {
+  throw {message: "Bu string, number kerak!"};
+}
+-----!
+
+#07 - Working with try-catch || try-catch bilan ishlash
+
+!-----
+try {
+  let num1 = 10;
+  let result = num1 + num2;
+  console.log(result);
+} catch (error) {
+  console.log('Error chiqdi', error.message);
+}
+
+// .finally 
+-----!
