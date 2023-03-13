@@ -52,7 +52,7 @@ for (let i = 0; i < 5;) {
 
 -----!
 
-#04 - Controlling Loops with Labeled Statements | labeled Statement'lar orqali loop ni boshqarish
+#04 - Controlling Loops with Labeled Statements | labeled statement'lar orqali loop ni boshqarish
 
 !-----
 outerLoop: for (let i = 0; i < 5; i++) {
