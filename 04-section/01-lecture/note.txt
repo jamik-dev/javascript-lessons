@@ -53,23 +53,21 @@ greet();
 #03 - Understanding hoisting | Hoisting ni tushinish
 
 !-----
-Show in Presintation
-
 // 1
-cosnole.log(name);
+console.log(name);
 let name = 'Jamshid';
 
 // 2
-cosnole.log(name);
+console.log(name);
 var name = 'Jamshid';
 
 // 3
 var name;
-cosnole.log(name);
+console.log(name);
 name = 'Jamshid';
 
 // 4
-cosnole.log(name);
+console.log(name);
 // code
 var name = 'Jamshid';
 
