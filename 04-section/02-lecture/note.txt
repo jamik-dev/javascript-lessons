@@ -1,0 +1,104 @@
+#01 - JavaScript Engines | JavaScript dvigatellari
+
+!-----
+Show in Presintation
+
+https://hackernoon.com/javascript-v8-engine-explained-3f940148d4ef
+
+-----!
+
+#02 - How Code Gets Executed | Qanday kod ishlaydi
+
+!-----
+Show in Presintation
+
+function getAge() {
+  const yosh = 18;
+  return yosh;
+}
+function getPerson() {
+  const ism = 'Jamshid';
+  const age = getAge();
+  return `${ism}ning yoshi ${age} da`;
+}
+
+function greet() {
+  const person = getPerson();
+  console.log(person);
+}
+
+greet();
+-----!
+
+#03 - Primitive vs Reference Values | Primitive va Reference qiymatlar
+
+!-----
+Show in Presintation
+
+// Primitive
+let name = 'Jamshid';
+let anotherName = name;
+
+console.log(name);
+console.log(anotherName);
+
+name = 'Sardor';
+
+console.log(name);
+console.log(anotherName);
+
+// Reference
+let person = {
+  name: 'Jamshid'
+}
+let anotherPerson = person;
+
+console.log(person);
+console.log(anotherPerson);
+
+person.name = 'Sardor';
+person.age = 18;
+
+console.log(person);
+console.log(anotherPerson);
+
+// if we do not want it to change
+let person = {
+  name: 'Jamshid'
+}
+let anotherPerson = {...person};
+
+console.log(person);
+console.log(anotherPerson);
+
+person.name = 'Sardor';
+person.age = 18;
+
+console.log(person);
+console.log(anotherPerson);
+
+// why different
+let person1 = {
+  name: 'Sardor',
+  age: 20
+}
+let person2 = {
+  name: 'Sardor',
+  age: 20
+}
+
+console.log(person1 === person2);
+
+// assigning new value in array
+const hobbies = ['Football'];
+hobbies.push('Cooking');
+
+hobbies = ['Football', 'Cooking'];
+-----!
+
+#04 - Garbage Collection | Axlat yig'ish
+
+!-----
+Show in Presintation
+https://v8.dev/blog/free-garbage-collection
+-----!
