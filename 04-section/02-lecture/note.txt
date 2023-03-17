@@ -4,7 +4,6 @@
 Show in Presintation
 
 https://hackernoon.com/javascript-v8-engine-explained-3f940148d4ef
-
 -----!
 
 #02 - How Code Gets Executed | Qanday kod ishlaydi
