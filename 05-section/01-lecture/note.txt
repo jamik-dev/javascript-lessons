@@ -1,0 +1,109 @@
+#01 - Section Introduction | Section tanishtiruv
+
+!-----
+Show in Presintation
+-----!
+
+#02 - What we already know | Biz nimalarni allaqachon bilamiz
+
+!-----
+Show in Presintation
+-----!
+
+#03 - Parameters and Arguments
+
+!-----
+// parameters
+function sayHi(name) {
+  // code
+}
+
+// arguments
+sayHi('Jamshid');
+-----!
+
+#04 - Functions and Methods
+
+!-----
+// functions
+function sayHi(name) {
+  console.log("Hi " + name);
+}
+sayHi('Jamshid');
+
+// Methods
+console.log("Jamshid".toUpperCase())
+
+// Objects with function 
+let person = {
+  name: "Jamshid",
+  greet: function greet() {
+    console.log("Hello there");
+  }
+}
+person.greet(); // method
+person.name // property
+-----!
+
+#05 - Functions are Objects | Funksiyalar bu Obyektlar
+
+!-----
+function sayHi(name) {
+  console.log("Hello " + name);
+}
+sayHi("Sardor");
+
+console.log(typeof sayHi);
+console.dir(sayHi);
+-----!
+
+#06 - Storing functions in variables | Funksiyalarni o'zgaruvchilarda saqlash
+
+!-----
+let say = function sayHi(name) { // expression, no more available in global scope
+  console.log("Hello " + name);
+}; // function expression
+
+let dummy = if(true) {} // error
+
+say('Jamshid');
+
+let say = function(name) { // anonymous / no need to give a name on function if don't use from it
+  console.log("Hello " + name);
+};
+-----!
+
+#07 - Function Decloration/Expression
+
+!-----
+// function decloration/statement
+sayHi("Jamshid");
+function sayHi(name) {
+  console.log("Hello " + name);
+}
+
+// function expression
+const sayHi = function(name) {
+  console.log("Hello " + name);
+}
+sayHi("Jamshid");
+-----!
+
+#08 - Anonymous Function
+
+!-----
+// 1
+setTimeout(function() {
+  console.log("Hello");
+}, 2000);
+
+// 2
+setTimeout(function sayHi() {
+  console.log("Hello");
+}, 2000);
+
+// 3 - self-invoking functions
+(function() {
+  console.log("Hello");
+})();
+-----!
