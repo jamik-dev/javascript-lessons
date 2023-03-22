@@ -76,6 +76,8 @@ let say = function(name) { // anonymous / no need to give a name on function if 
 #07 - Function Decloration/Expression
 
 !-----
+Show in Presintation
+
 // function decloration/statement
 sayHi("Jamshid");
 function sayHi(name) {

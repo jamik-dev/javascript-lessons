@@ -4,7 +4,7 @@
 // javobni console da chiqaring
 
 // # 2 Exercise | funksiya (decloration) yarating va unga xohlagan nomingizni bering
-// funksiya bizga 5ta 0.6 dan katta bo'lgan ixtiyoriy sonlar to'plamini qaytarsin
+// funksiya bizga 5ta 0.6 dan katta bo'lgan ixtiyoriy sonlar to'plamini (array) qaytarsin
 // javobni console da chiqaring
 
 // # 3 Exercise | setTimeout funksiyasi orqali 
