@@ -9,42 +9,42 @@ const COMPUTER_WINS = "KOMPYUTER YUTDI";
 
 // FUNKSIYALAR
 function userInput() {
-  const USER_INPUT = prompt(`Tanlang ${QOGOZ}, ${QAYCHI} yoki ${QUDUQ}?`, '').toUpperCase();
-  if (USER_INPUT !== QOGOZ && USER_INPUT !== QAYCHI && USER_INPUT !== QUDUQ) {
-    alert(`Xato so'z kiritdingiz!\nSiz uchun standard ${QUDUQ}'ni tanlaymiz!`);
+  const INPUT = prompt(`Tanlang ${QOGOZ}, ${QAYCHI} yoki ${QUDUQ}`,"").toUpperCase();
+  if (INPUT !== QOGOZ && INPUT !== QAYCHI && INPUT !== QUDUQ) {
+    alert(`Siz noto'g'ri so'z kiritdingiz!\nSiz uchun ${QUDUQ}'ni tanlab qo'yaman.`);
     return QUDUQ;
   }
-  return USER_INPUT;
+  return INPUT;
 }
 
 function computerInput() {
-  const random = Math.floor(Math.random()*10);
-  if (random < 4) {
-    return QAYCHI;
-  } else if (random < 7) {
+  const RANDOM = Math.floor(Math.random() * 10);
+  if (RANDOM < 4) {
     return QOGOZ;
+  } else if (RANDOM < 7) {
+    return QAYCHI;
   } else {
     return QUDUQ;
   }
 }
 
-function whoWins(pChoice, cChoice) {
-  if (pChoice === cChoice) {
-    return TENGLIK; 
-  }
-  else if (
-    pChoice === QOGOZ && cChoice === QUDUQ ||
-    pChoice === QUDUQ && cChoice === QAYCHI || 
-    pChoice === QAYCHI && cChoice === QOGOZ) 
-    {
-      return PLAYER_WINS
+function whoWins(playChoice, compChoice) {
+  if (playChoice === compChoice) {
+    return TENGLIK;
+  } else if (
+    (playChoice === QOGOZ && compChoice === QUDUQ) ||
+    (playChoice === QAYCHI && compChoice === QOGOZ) ||
+    (playChoice === QUDUQ && compChoice === QAYCHI)
+  ) {
+    return PLAYER_WINS;
   } else {
     return COMPUTER_WINS;
   }
 }
 
-// CHAQIRISHLAR
+
 const pChoice = userInput();
 const cChoice = computerInput();
 const winner = whoWins(pChoice, cChoice);
-console.log(`${winner} \n\nuser: ${pChoice} \nkomyuter: ${cChoice}`);
+
+console.log(`${winner}\n\nplayer: ${pChoice}\ncomputer: ${cChoice}`);
