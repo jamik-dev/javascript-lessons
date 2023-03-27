@@ -9,9 +9,14 @@ const COMPUTER_WINS = "KOMPYUTER YUTDI";
 
 // FUNKSIYALAR
 function userInput() {
-  const INPUT = prompt(`Tanlang ${QOGOZ}, ${QAYCHI} yoki ${QUDUQ}`,"").toUpperCase();
+  const INPUT = prompt(
+    `Tanlang ${QOGOZ}, ${QAYCHI} yoki ${QUDUQ}`,
+    ""
+  ).toUpperCase();
   if (INPUT !== QOGOZ && INPUT !== QAYCHI && INPUT !== QUDUQ) {
-    alert(`Siz noto'g'ri so'z kiritdingiz!\nSiz uchun ${QUDUQ}'ni tanlab qo'yaman.`);
+    alert(
+      `Siz noto'g'ri so'z kiritdingiz!\nSiz uchun ${QUDUQ}'ni tanlab qo'yaman.`
+    );
     return QUDUQ;
   }
   return INPUT;
@@ -42,9 +47,10 @@ function whoWins(playChoice, compChoice) {
   }
 }
 
+while (true) {
+  const pChoice = userInput();
+  const cChoice = computerInput();
+  const winner = whoWins(pChoice, cChoice);
 
-const pChoice = userInput();
-const cChoice = computerInput();
-const winner = whoWins(pChoice, cChoice);
-
-console.log(`${winner}\n\nplayer: ${pChoice}\ncomputer: ${cChoice}`);
+  console.log(`${winner}\n\nplayer: ${pChoice}\ncomputer: ${cChoice}`);
+}

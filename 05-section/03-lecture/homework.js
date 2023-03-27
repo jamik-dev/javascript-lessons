@@ -6,8 +6,8 @@
 // agar familya'ga argument berish unutilsa, standard holatda "Surname" string berilsin
 // console da ism va familyani qatnashtirib gap tuzing 
 
-// # 3 Exercise |  funksiya yarating va unga ixtiyoriy miqdorda parametr bera oladigan qiling
+// # 3 Exercise | funksiya yarating va unga ixtiyoriy miqdorda parametr bera oladigan qiling
 // parametrlar barchasi number bo'lishi kerak
-// funksiya bizga parametrlarning o'rtacha qiymatini qaytarsin
+// funksiya bizga parametrlarning o'rtacha qiymatini qaytarsin, paramterlar/array.length
 // agar bironta parametr string bo'lib qolsa uni olmay ketsin
 // javobni console da chiqaring
