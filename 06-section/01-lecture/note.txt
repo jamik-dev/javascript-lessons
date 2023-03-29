@@ -1,0 +1,80 @@
+#01 - The "Document Object Model" (DOM)
+
+!-----
+Show in Presintation
+-----!
+
+#02 - Document vs window
+
+!-----
+Show in Presintation
+-----!
+
+#03 - Document and Window object
+
+!-----
+Show in Browser
+console.dir(document)
+alert() app.js
+-----!
+
+#04 - DOM creation | DOM yaralishi
+
+!-----
+Show in Presintation
+$0 => last chosen element
+-----!
+
+#05 - Nodes & Elements
+
+!-----
+Show in Presintation
+-----!
+
+#06 - Selecting elements in the DOM | DOM'dan element'larni tanlash
+
+!-----
+Show in Presintation
+
+// 1
+const h1 = document.getElementById('main-title');
+console.dir(h1);
+
+// 2
+const ul = document.getElementsByTagName('ul');
+console.log(ul)
+
+// 3
+const ul = document.getElementsByTagName('ul');
+li = ul[0].querySelector('li')
+console.log(li)
+
+// 4
+const li = document.querySelector('.list-item');
+
+// 5
+const lis = document.querySelectorAll('li');
+
+// 6
+const li = document.querySelector('ul li:last-of-type');
+
+// 7
+const li = document.getElementByClassName('.list-item');
+
+-----!
+
+#07 - Node query methods | Node tanlash metodlari
+
+!-----
+// property | qiymatlar
+document.body => <body> element node ni tanlaydi  
+document.head => <head> element node ni tanlaydi  
+document.documentElement => <html> element node ni tanlaydi  
+
+// methods | metodlar
+document.querySelector(<CSS selector>); // '#some-id', '.some-class', 'div p.some-class' topa olmasa null
+document.getElementById(<ID>); // # kerakmas, agar bir xil id lik elemenlar ko'p bo'lsa, birinchisini qaytaradi
+document.querySelectorAll(<CSS selector>); // '#some-id', '.some-class', 'div p.some-class', barcha mos kelgan elemenlarni qaytaradi statik holda: NodeList
+document.getElementsByClassName(<CSS CLASS>); // 'some-class', live HTMLCollection qaytaradi
+document.getElementsByTagName(<HTML TAG>); // 'p', 'div', live HTMLCollection qaytaradi
+-----!
