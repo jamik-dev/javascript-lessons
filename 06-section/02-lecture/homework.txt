@@ -1,0 +1,8 @@
+# 01 - Exercise 
+Javascript orqali <title> tegidagi content / yozuv ni 'Uyga Vazifa' ga o'zgartirasiz
+
+# 02 - Exercise
+Javascript orqali <li> itemning 2-chisini rangini qizil ranga o'zgartirasiz
+
+# 03 - Exercise
+Javascript orqali <h1> tegidagi content / yozuv ni 'Uyga Vazifa' ga o'zgartirasiz

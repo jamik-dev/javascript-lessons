@@ -1,0 +1,92 @@
+#01 - Evaluating & Manipulating Elements | Elementlarni manipulyatsiya qilish
+
+!-----
+Show in Presintation
+const h1 = document.querySelector('h1');
+h1.textContent
+h1.className
+h1.textContent = 'New text replaced!';
+h1.className = 'title';
+h1.style.color = 'green';
+h1.style.background-color // xato
+h1.style.backgroundColor = 'red';
+
+reload bersa hammasi o'cib ketadi
+-----!
+
+#02 - Attributes vs Properties
+
+!-----
+Show in Presintation
+
+<input type="text" value="default text" /> // file
+const input = document.querySelector('input');
+console.dir(input);
+// changing in html value
+const input2 = document.querySelector('input');
+console.dir(input2);
+input2.value = "Some other input";
+
+const h1 = document.getElementById('main-title');
+h1.id = 'new-id';
+h1
+
+// if we want to change attribute also
+input.setAttribute('value', 'Some other default text')
+// check html code
+input.value
+input.value = input.getAttribute('value');
+-----!
+
+#03 - Selecting multiple elements | Bir-qancha elementlarni tanlash
+
+!-----
+const listItemELements = document.querySelectorAll('li'); // not live change
+const listItemElements = document.getElementsByTagName('li'); // live change
+
+for (const listItemEl of listItemElements) {
+  console.dir(listItemEl);
+}
+-----!
+
+#04 - Little practice
+
+!-----
+const h1 = document.getElementById('main-title');
+h1.textContent = 'Some new title!';
+h1.style.color = 'white';
+h1.style.backgroundColor = 'black';
+
+const li = document.querySelector('li:last-of-type);
+li.textContent = li.textContent + ' (Changed!)';
+
+const body = document.body;
+body.querySelector('h1) // so on
+-----!
+
+#05 - Children, Descendants, Parent & Ancestors
+
+!-----
+Show in Presintation
+-----!
+
+#06 - Traversing the DOM | DOM orqali aloqa/o'tish
+
+!-----
+Show in Presintation
+-----!
+
+#07 - Traversing child nodes | Child node lar bilan aloqa
+
+!-----
+const ul = document.querySelector('ul');
+ul.children
+ul.childNodes
+
+ul.style.whiteSpace = 'pre';
+
+ul.firstChild
+ul.firstElementChild
+ul.lastChild
+ul.lastElementChild
+-----!
