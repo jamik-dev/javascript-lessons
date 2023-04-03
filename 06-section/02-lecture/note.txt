@@ -11,7 +11,7 @@ h1.style.color = 'green';
 h1.style.background-color // xato
 h1.style.backgroundColor = 'red';
 
-reload bersa hammasi o'cib ketadi
+reload bersa hammasi o'chib ketadi
 -----!
 
 #02 - Attributes vs Properties
@@ -57,11 +57,11 @@ h1.textContent = 'Some new title!';
 h1.style.color = 'white';
 h1.style.backgroundColor = 'black';
 
-const li = document.querySelector('li:last-of-type);
+const li = document.querySelector('li:last-of-type');
 li.textContent = li.textContent + ' (Changed!)';
 
 const body = document.body;
-body.querySelector('h1) // so on
+body.querySelector('h1') // so on
 -----!
 
 #05 - Children, Descendants, Parent & Ancestors
