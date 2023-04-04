@@ -1,0 +1,5 @@
+# 01 - Exercise 
+Javascript orqali <h1> tegidagi background color ni bir bosganda qizil, bir bosganda ko'k rang qiladigan qilasiz
+
+# 02 - Exercise
+Javascript orqali o'zingizga yoqqan 5 xil stil berib ko'ring

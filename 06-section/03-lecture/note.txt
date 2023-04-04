@@ -1,0 +1,80 @@
+#01 - closest()
+
+!-----
+const li = document.querySelector('li');
+li.closest('body');
+li.closest('header');
+-----!
+
+#02 - Selecting sibling elements | bir xil darajadagi elementlarni belgilash
+
+!-----
+const ul = document.querySelector('ul');
+ul.previousSibling
+ul.previousElementSibling
+ul.nextSibling
+ul.nextElementSibling
+-----!
+
+#03 - DOM Traversal vs Query Methods
+
+!-----
+// 1
+const ul = document.body.firstElementChild.nextElementSibling;
+const li = ul.firstElementChild;
+console.log(li);
+
+// 2
+const li = document.querySelector('li');
+-----!
+
+#04 - Styling DOM elements | DOM elemenlarga stil berish
+
+!-----
+Show in Presintation
+
+// 1
+wrap ul with <section></section> tag
+const section = document.querySelector('section');
+section.style.backgroundColor = "green"; // in html elements tab you can see style proprety
+
+// 2
+<style>
+  .red-bg {
+    background-color: red;
+    color: white;
+  }
+  .visible {
+    display: block;
+  }
+  .invisible {
+    display: none;
+  }
+</style>
+
+section class => red-bg
+
+// 3
+const section = document.querySelector('section'); // app.js
+section.style.backgroundColor = "blue"; // app.js
+
+// 4
+section.className = '';
+
+// 5
+add <button> after section tag named 'Toggle Visiblity'
+const button = document.querySelector('button');
+
+// 6
+button.addEventListener('click', () => {
+  if (section.className === 'red-bg visible') {
+    section.className = 'red-bg invisible';
+  } else {
+    section.className = 'red-bg visible';
+  }
+})
+
+// 7
+add visible class to section
+section.classList.toggle('invisible')
+-----!
