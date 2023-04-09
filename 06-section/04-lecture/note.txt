@@ -1,0 +1,77 @@
+#01 - Creating elements with JS | JavaScript orqali elementlarni yaratish
+
+!-----
+Show in Presintation
+-----!
+
+#02 - Adding elements via html | Html orqali elementlar qo'shish
+
+!-----
+// 1
+const section = document.querySelector('section');
+section.textContent = 'Yangi Content!'; // bu faqat text ni o'zgartiradi
+section.innerHtml = '<h2>Yangi title!</h2>; // html kod larni yoza olamiz
+
+// 2
+const ul = document.querySelector('ul');
+ul.innerHtml = ul.innerHtml + '<li>Item 4</li>';
+
+// 3
+watch elements in browser when item 5 is added
+all elements will be flashed, it means all elements rerendered
+it is not good for performance
+
+// 4
+wrap input with div
+
+const div = document.querySelector('div');
+div.innerHtml = div.innerHtml + '<p>Something went wrong!</p>';
+
+data inside input will be lost
+
+// 5
+https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
+
+div.insertAdjacentHtml('beforeend', '<p>Something went wrong!</p>');
+
+// 6
+downside of this approach is that it doesn't give direct access to an element that has been added
+we have to query it again
+-----!
+
+#03 - createElement(), appendChild()
+
+!-----
+const ul = document.querySelector('ul');
+const newLi = document.createElement('li');
+newLi.textContent = 'List 4';
+ul.appendChild(newLi);
+newLi.style.backgroundColor = 'blue';
+-----!
+
+#04 - Inserting DOM elements | DOM elementlarini kiritish
+
+!-----
+// 1
+const ul = document.querySelector('ul');
+ul.append('Some text!'); // it adds new string after elements
+advantage of this method, you can add more than one and add string
+
+// 2
+const newLi = document.createElement('li');
+newLi.textContent = "Item 4";
+ul.prepend(textContent); // older version is element.insertBefore
+
+// 3
+if we want to add before item 3 
+ul.lastElementChild.before(newLi); // objects are reference that's why it moves to other place
+we have also after
+
+// 4
+ul.firstElementChild.replaceWith(newLi); // it will replace it with new element
+
+// 5
+after bilan before safari va internet expoler da support bo'lmagani uchun, shu metoddan foydalansak bo'ladi
+const secondLi = ul.children[1];
+secondLi.insertAdjacentElement('afterend', newLi)
+-----!
