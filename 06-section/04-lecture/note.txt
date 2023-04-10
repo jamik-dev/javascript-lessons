@@ -60,7 +60,7 @@ advantage of this method, you can add more than one and add string
 // 2
 const newLi = document.createElement('li');
 newLi.textContent = "Item 4";
-ul.prepend(textContent); // older version is element.insertBefore
+ul.prepend(newLi); // older version is element.insertBefore
 
 // 3
 if we want to add before item 3 

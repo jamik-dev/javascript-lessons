@@ -1,4 +1,5 @@
 # 01 - Exercise 
 Javascript orqali button bosilganda listga yangi element qo'shilsin
+
 # 02 - Exercise
 Javascript orqali button bosilganda listning oxirgi elementi boshidagi elementi bilan joy almashsin
