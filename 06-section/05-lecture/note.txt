@@ -1,0 +1,50 @@
+#01 - Cloning DOM Nodes | DOM Node'lardan nusxa olish
+!-----
+const newLi2 = newLi.cloneNode(false) // shallow copy, not copied nested elements
+const newLi2 = newLi.cloneNode(true) // deep copy, copied nested elements
+ul.append(newLi, newLi2);
+-----!
+
+#02 - Live Node Lists vs Static Node Lists
+
+!-----
+const list = document.querySelector('ul'); 
+
+const listItems = list.querySelectorAll('li') // NodeLists
+const listItems2 = list.getElementsByTagName('li') // HTML Collection
+
+const newLi = document.createElement('li');
+newLi.textContent = 'Item 4';
+ul.append(newLi);
+
+listItems
+listItems[0].textContent = 'Item 11';
+listItems2
+
+'By' qo'llangan query metodlar live node qaytaradi
+ba'zida bu memory to'lib qolishi olib kelishi mumkin
+-----!
+
+#03 - Removing elements | Elementlarni yo'qotish
+
+!-----
+// 1
+const list = document.querySelector('ul'); 
+list.remove();
+
+// 2
+const list = document.querySelector('ul'); 
+list.parentElement.removeChild(list)
+-----!
+
+#04 - Insertion & Removal Method Summary | Kiritish va yo'q qilish metodlariga xulosa
+
+!-----
+Show in Presintation
+-----!
+
+#05 - Wrap up
+
+!-----
+TAKRORLASH
+-----!
