@@ -1,0 +1,41 @@
+// Creating Constants
+const inputValue = document.querySelector('#inputtask');
+const addButton = document.querySelector('#addbutton');
+const list = document.querySelector('.todolist');
+const clear = document.querySelector('.clear');
+
+// Event Listeners
+addButton.addEventListener('click', () => {
+  if (!inputValue.value) {
+    alert('Please, enter some text')
+  } else {
+    const task = document.createElement('li');
+    const span = document.createElement('span');
+    const editBtn = document.createElement('button');
+    const deleteBtn = document.createElement('button');
+
+    span.textContent = inputValue.value;
+    editBtn.textContent = 'Edit';
+    deleteBtn.textContent = 'Delete';
+
+    task.append(span, editBtn, deleteBtn);    
+    list.appendChild(task);
+    clear.classList.remove('d-none');
+    inputValue.value = ''
+    inputValue.focus();
+
+    editBtn.addEventListener('click', () => {
+      span.contentEditable = true;
+      span.focus()
+    })
+
+    deleteBtn.addEventListener('click', () => {
+      task.remove();
+    })
+  }
+})
+
+clear.addEventListener('click', () => {
+  list.innerHTML = '';
+  clear.classList.add('d-none');
+})
